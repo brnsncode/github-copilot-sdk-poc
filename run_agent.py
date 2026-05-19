@@ -5,7 +5,7 @@ from copilot.session import PermissionHandler
 async def main():
     async with CopilotClient() as client:
         async with await client.create_session(
-            model="gpt-4o",
+            model="gpt-5",
             on_permission_request=PermissionHandler.approve_all  # ✅ REQUIRED
         ) as session:
 
